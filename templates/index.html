@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emoji风格图像生成器</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+    <script src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>emoji风格图像生成器</h1>
+        <div class="upload-area" id="dropZone">
+            <p>点击或拖拽图片到此处上传（最多5张）</p>
+            <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+            <button class="fileInputBtn"  onclick="document.getElementById('fileInput').click()">选择图片</button>
+        </div>
+        <div class="preview-area" id="previewArea"></div>
+        <div class="loading" id="loading">处理中...</div>
+        <div class="error" id="error"></div>
+        <div class="result-area" id="resultArea"></div>
+    </div>
+    <script src="{{url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 

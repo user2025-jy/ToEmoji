@@ -1,0 +1,42 @@
+
+## 安装步骤
+
+1. 克隆项目到本地：
+```bash
+git clone [项目地址]
+cd emoji风格图像生成器
+```
+
+2. 创建并激活虚拟环境（推荐）：
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. 安装依赖：
+```bash
+pip install -r requirements.txt
+```
+
+4. 配置环境变量：
+创建 `.env` 文件并添加以下内容：
+```
+API_KEY=your_api_key_here
+```
+
+## 运行应用
+
+1. 启动Flask应用：
+```bash
+python app.py
+```
+
+2. 在浏览器中访问：
+```
+http://localhost:5000
+```
